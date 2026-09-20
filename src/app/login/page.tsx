@@ -124,11 +124,12 @@ export default function LoginPage() {
         email: cleanEmail,
         password,
         options: {
-          data: {
-            full_name: cleanName,
-            phone: cleanPhone,
-          },
-        },
+  emailRedirectTo: `${window.location.origin}/auth/confirm?next=/`,
+  data: {
+    full_name: cleanName,
+    phone: cleanPhone,
+  },
+},
       });
 
     if (authError) {
