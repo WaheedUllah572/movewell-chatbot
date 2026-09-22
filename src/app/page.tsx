@@ -1725,8 +1725,8 @@ export default function Home() {
                 className="hidden h-[44px] w-full max-w-[570px] items-center gap-3 rounded-[13px] border border-slate-200 bg-white px-4 text-left shadow-[0_4px_18px_rgba(15,23,42,.035)] hover:border-emerald-200 lg:flex"
               >
                 <Search className="size-[18px] text-slate-400" />
-                <span className="flex-1 text-[12px] font-medium text-slate-500">Search services, resources, or ask anything...</span>
-                <kbd className="rounded-[7px] border border-slate-200 bg-slate-50 px-2 py-1 text-[9px] font-bold text-slate-500">⌘ K</kbd>
+                <span className="flex-1 text-[14px] font-medium text-slate-500">Search services, resources, or ask anything...</span>
+                <kbd className="rounded-[7px] border border-slate-200 bg-slate-50 px-2 py-1 text-[10px] font-bold text-slate-500">⌘ K</kbd>
               </button>
             </div>
 
@@ -1747,8 +1747,8 @@ export default function Home() {
                   </AvatarFallback>
                 </Avatar>
                 <span className="hidden text-left sm:block">
-                  <span className="block max-w-[130px] truncate text-[12px] font-bold">{authUser?.name || "Patient"}</span>
-                  <span className="block text-[9px] text-slate-500">Patient Portal</span>
+                  <span className="block max-w-[130px] truncate text-[13px] font-bold">{authUser?.name || "Patient"}</span>
+                  <span className="block text-[11px] text-slate-500">Patient Portal</span>
                 </span>
                 <ChevronDown className={`size-4 text-slate-400 transition ${accountMenuOpen ? "rotate-180" : ""}`} />
               </button>
@@ -1788,7 +1788,7 @@ export default function Home() {
                   if (label === "Appointments") {
                     router.push("/appointments");
                   }
-                }} className={`group flex h-[45px] w-full items-center gap-3 rounded-[11px] px-3.5 text-left text-[13px] transition ${active ? "bg-[#e2f7ef] font-semibold text-[#075f4f]" : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"}`}>
+                }} className={`group flex h-[45px] w-full items-center gap-3 rounded-[11px] px-3.5 text-left text-[14px] transition ${active ? "bg-[#e2f7ef] font-semibold text-[#075f4f]" : "text-slate-500 hover:bg-slate-50 hover:text-slate-900"}`}>
                 <Icon className={`size-[18px] ${active ? "text-[#08715d]" : "text-slate-400 group-hover:text-slate-600"}`} />
                 {label}
               </button>
@@ -1797,12 +1797,12 @@ export default function Home() {
           <div className="px-4 pb-5">
             <div className="rounded-[14px] border border-emerald-100 bg-[#f0fbf7] p-4">
               <div className="flex size-9 items-center justify-center rounded-full bg-white text-emerald-700"><Phone className="size-4" /></div>
-              <p className="mt-3 text-[11px] font-bold">Need urgent help?</p>
-              <p className="mt-1 text-[10px] text-slate-500">Call us directly</p>
-              <p className="mt-1.5 text-[12px] font-bold text-[#08715d]">+33 3 89 123 456</p>
+              <p className="mt-3 text-[12px] font-bold">Need urgent help?</p>
+              <p className="mt-1 text-[12px] text-slate-500">Call us directly</p>
+              <p className="mt-1.5 text-[13px] font-bold text-[#08715d]">+33 3 89 123 456</p>
             </div>
             <p className="mt-7 px-1 text-[17px] font-extrabold tracking-[-.04em]">MoveWell</p>
-            <p className="mt-1 px-1 text-[10px] leading-4 text-slate-400">Small Steps<br />Stronger You</p>
+            <p className="mt-1 px-1 text-[11px] leading-4 text-slate-400">Small Steps<br />Stronger You</p>
           </div>
         </aside>
 
@@ -1814,7 +1814,7 @@ export default function Home() {
                 <div className="absolute inset-0 opacity-[.075]" style={{backgroundImage:"linear-gradient(rgba(255,255,255,.8) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.8) 1px,transparent 1px)",backgroundSize:"42px 42px"}} />
                 <div className="relative flex min-h-[275px] items-center px-6 py-8 sm:px-10">
                   <div className="max-w-[700px]">
-                    <p className="text-[9px] font-bold uppercase tracking-[.28em] text-emerald-200">Welcome to MoveWell</p>
+                    <p className="text-[10px] font-bold uppercase tracking-[.28em] text-emerald-200">Welcome to MoveWell</p>
                     <h2 className="mt-4 text-[34px] font-extrabold leading-[1.04] tracking-[-.055em] text-white sm:text-[42px]">
                       Hi {patientFirstName},<br />How can we help you <span className="text-emerald-200">today?</span>
                     </h2>
@@ -1823,7 +1823,7 @@ export default function Home() {
                     </p>
                     <div className="mt-5 flex flex-wrap gap-2">
                       {[["Trusted guidance",ShieldCheck],["Personalized support",Sparkles],["Always available",CheckCircle2]].map(([label,Icon]) => (
-                        <span key={label as string} className="flex items-center gap-2 rounded-full bg-white/10 px-3 py-2 text-[10px] font-semibold text-white/90 ring-1 ring-white/10">
+                        <span key={label as string} className="flex items-center gap-2 rounded-full bg-white/10 px-3 py-2 text-[11px] font-semibold text-white/90 ring-1 ring-white/10">
                           <Icon className="size-3.5 text-emerald-200" />{label as string}
                         </span>
                       ))}
@@ -1842,9 +1842,9 @@ export default function Home() {
                         <button key={suggestion.text} type="button" onClick={() => handleSuggestionClick(suggestion.text)} disabled={isLoading} className="group relative min-h-[145px] rounded-[16px] border border-slate-200/80 bg-white p-5 text-left shadow-[0_6px_22px_rgba(15,23,42,.035)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_30px_rgba(15,23,42,.07)] disabled:opacity-60">
                           <div className={`flex size-10 items-center justify-center rounded-[11px] ${tone}`}><Icon className="size-[19px]" /></div>
                           <ChevronRight className="absolute right-4 top-5 size-4 text-slate-300 group-hover:text-emerald-600" />
-                          <p className="mt-4 text-[9px] font-bold uppercase tracking-[.18em] text-emerald-700">{suggestion.eyebrow}</p>
+                          <p className="mt-4 text-[10px] font-bold uppercase tracking-[.18em] text-emerald-700">{suggestion.eyebrow}</p>
                           <p className="mt-1.5 text-[14px] font-extrabold tracking-[-.025em]">{suggestion.title}</p>
-                          <p className="mt-1.5 text-[10px] leading-4 text-slate-500">{suggestion.text}</p>
+                          <p className="mt-1.5 text-[12px] leading-4 text-slate-500">{suggestion.text}</p>
                         </button>
                       );
                     })}
@@ -1858,7 +1858,7 @@ export default function Home() {
                           key={q}
                           type="button"
                           onClick={() => handleSuggestionClick(q)}
-                          className="flex h-10 shrink-0 items-center gap-2 rounded-full border border-slate-200 bg-white px-4 text-[10px] font-semibold text-slate-600 transition hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
+                          className="flex h-10 shrink-0 items-center gap-2 rounded-full border border-slate-200 bg-white px-4 text-[12px] font-semibold text-slate-600 transition hover:border-emerald-200 hover:bg-emerald-50 hover:text-emerald-700"
                         >
                           {q}
                           <ChevronRight className="size-3.5" />
@@ -1870,13 +1870,13 @@ export default function Home() {
                   <div className="mt-5 rounded-[16px] border border-emerald-100 bg-gradient-to-br from-[#f2fbf7] to-white p-5 shadow-[0_6px_22px_rgba(15,23,42,.03)]">
                     <div className="flex items-start justify-between gap-4">
                       <div>
-                        <p className="text-[9px] font-bold uppercase tracking-[.18em] text-emerald-700">
+                        <p className="text-[10px] font-bold uppercase tracking-[.18em] text-emerald-700">
                           MoveWell AI
                         </p>
                         <h3 className="mt-1.5 text-[16px] font-extrabold tracking-[-.025em]">
                           What can I help with?
                         </h3>
-                        <p className="mt-1 text-[10px] leading-4 text-slate-500">
+                        <p className="mt-1 text-[12px] leading-4 text-slate-500">
                           Ask naturally and I can guide you through information and appointments.
                         </p>
                       </div>
@@ -1909,8 +1909,8 @@ export default function Home() {
                             <Icon className="size-4" />
                           </div>
                           <div className="min-w-0">
-                            <p className="text-[10px] font-bold">{title as string}</p>
-                            <p className="mt-0.5 text-[9px] leading-3.5 text-slate-500">
+                            <p className="text-[12px] font-bold">{title as string}</p>
+                            <p className="mt-0.5 text-[11px] leading-3.5 text-slate-500">
                               {description as string}
                             </p>
                           </div>
@@ -1922,22 +1922,22 @@ export default function Home() {
 
                 <aside className="hidden space-y-4 xl:block">
                   <div className="rounded-[16px] border border-slate-200/80 bg-white p-4 shadow-[0_6px_22px_rgba(15,23,42,.035)]">
-                    <div className="flex items-center justify-between"><h3 className="text-[13px] font-extrabold">Your next appointment</h3><button type="button" onClick={() => handleSuggestionClick("Show my upcoming appointments")} className="text-[10px] font-semibold text-emerald-700">View all</button></div>
+                    <div className="flex items-center justify-between"><h3 className="text-[13px] font-extrabold">Your next appointment</h3><button type="button" onClick={() => handleSuggestionClick("Show my upcoming appointments")} className="text-[12px] font-semibold text-emerald-700">View all</button></div>
                     <div className="mt-3 rounded-[12px] border border-slate-100 bg-[#fbfdfc] p-3.5">
-                      <div className="flex gap-3"><div className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-emerald-50 text-emerald-700"><CalendarDays className="size-5" /></div><div><p className="text-[11px] font-bold">No upcoming appointment</p><p className="mt-1 text-[10px] leading-4 text-slate-500">MoveWell AI can help you find a therapist and available time.</p></div></div>
+                      <div className="flex gap-3"><div className="flex size-10 shrink-0 items-center justify-center rounded-[10px] bg-emerald-50 text-emerald-700"><CalendarDays className="size-5" /></div><div><p className="text-[11px] font-bold">No upcoming appointment</p><p className="mt-1 text-[12px] leading-4 text-slate-500">MoveWell AI can help you find a therapist and available time.</p></div></div>
                     </div>
-                    <button type="button" onClick={() => handleSuggestionClick("I want to book an appointment")} className="mt-3 h-10 w-full rounded-[10px] bg-[#08715d] text-[10px] font-bold text-white hover:bg-[#075f4f]">Request a visit</button>
+                    <button type="button" onClick={() => handleSuggestionClick("I want to book an appointment")} className="mt-3 h-10 w-full rounded-[10px] bg-[#08715d] text-[12px] font-bold text-white hover:bg-[#075f4f]">Request a visit</button>
                   </div>
 
                   <div className="rounded-[16px] border border-slate-200/80 bg-white p-4 shadow-[0_6px_22px_rgba(15,23,42,.035)]">
-                    <div className="flex items-center justify-between"><h3 className="text-[13px] font-extrabold">Your progress</h3><span className="text-[10px] font-semibold text-slate-300">Coming soon</span></div>
+                    <div className="flex items-center justify-between"><h3 className="text-[13px] font-extrabold">Your progress</h3><span className="text-[11px] font-semibold text-slate-300">Coming soon</span></div>
                     <div className="mt-4 flex items-center gap-4">
                       <div className="flex size-[74px] items-center justify-center rounded-full border-[7px] border-emerald-50 bg-white">
                         <Clock3 className="size-6 text-emerald-600" />
                       </div>
                       <div>
                         <p className="text-[11px] font-bold">Care progress</p>
-                        <p className="mt-1 text-[10px] leading-4 text-slate-500">
+                        <p className="mt-1 text-[12px] leading-4 text-slate-500">
                           Progress tracking will appear here when available.
                         </p>
                       </div>
@@ -1945,9 +1945,9 @@ export default function Home() {
                   </div>
 
                   <div className="rounded-[16px] border border-slate-200/80 bg-white p-4 shadow-[0_6px_22px_rgba(15,23,42,.035)]">
-                    <div className="flex items-center justify-between"><h3 className="text-[13px] font-extrabold">Health resources</h3><span className="text-[10px] font-semibold text-emerald-700">Explore</span></div>
+                    <div className="flex items-center justify-between"><h3 className="text-[13px] font-extrabold">Health resources</h3><span className="text-[12px] font-semibold text-emerald-700">Explore</span></div>
                     <div className="mt-3 space-y-1.5">
-                      {resources.map(([title,meta,Icon]) => <button key={title} type="button" onClick={() => handleSuggestionClick(`Tell me about ${title}`)} className="group flex w-full items-center gap-3 rounded-[10px] p-1.5 text-left hover:bg-slate-50"><div className="flex size-9 items-center justify-center rounded-[9px] bg-emerald-50 text-emerald-700"><Icon className="size-4" /></div><div className="min-w-0 flex-1"><p className="truncate text-[10px] font-bold">{title}</p><p className="text-[9px] text-slate-500">{meta}</p></div><ChevronRight className="size-3.5 text-slate-300" /></button>)}
+                      {resources.map(([title,meta,Icon]) => <button key={title} type="button" onClick={() => handleSuggestionClick(`Tell me about ${title}`)} className="group flex w-full items-center gap-3 rounded-[10px] p-1.5 text-left hover:bg-slate-50"><div className="flex size-9 items-center justify-center rounded-[9px] bg-emerald-50 text-emerald-700"><Icon className="size-4" /></div><div className="min-w-0 flex-1"><p className="truncate text-[12px] font-bold">{title}</p><p className="text-[11px] text-slate-500">{meta}</p></div><ChevronRight className="size-3.5 text-slate-300" /></button>)}
                     </div>
                   </div>
                 </aside>
@@ -1963,10 +1963,10 @@ export default function Home() {
                   [Star,"Smart","Guided support","Personalized assistance"],
                   [LockKeyhole,"Secure","Patient privacy","Your data stays protected"],
                   [Clock3,"24/7","AI assistant","Get instant guidance"],
-                ].map(([Icon,value,title,sub]) => <div key={title as string} className="flex min-h-[84px] items-center gap-3 rounded-[14px] border border-emerald-100 bg-[#f0fbf7] px-4"><div className="flex size-10 items-center justify-center rounded-full bg-[#d9f6eb] text-[#08715d]"><Icon className="size-[18px]" /></div><div><p className="text-[16px] font-extrabold">{value as string}</p><p className="text-[10px] font-semibold text-[#08715d]">{title as string}</p><p className="text-[8px] text-slate-500">{sub as string}</p></div></div>)}
+                ].map(([Icon,value,title,sub]) => <div key={title as string} className="flex min-h-[84px] items-center gap-3 rounded-[14px] border border-emerald-100 bg-[#f0fbf7] px-4"><div className="flex size-10 items-center justify-center rounded-full bg-[#d9f6eb] text-[#08715d]"><Icon className="size-[18px]" /></div><div><p className="text-[16px] font-extrabold">{value as string}</p><p className="text-[11px] font-semibold text-[#08715d]">{title as string}</p><p className="text-[10px] text-slate-500">{sub as string}</p></div></div>)}
               </div>
 
-              <footer className="flex flex-col items-center justify-between gap-3 py-6 text-[9px] text-slate-400 sm:flex-row">
+              <footer className="flex flex-col items-center justify-between gap-3 py-6 text-[11px] text-slate-400 sm:flex-row">
                 <span>© 2026 MoveWell Physiotherapy Clinic. All rights reserved.</span><span>Privacy Policy &nbsp; | &nbsp; Terms of Service &nbsp; | &nbsp; Contact</span>
               </footer>
             </div>
