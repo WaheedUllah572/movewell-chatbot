@@ -1692,7 +1692,7 @@ export default function Home() {
     <main className="movewell-portal min-h-[100dvh] bg-[#f7faf9] text-slate-950">
       <header className="sticky top-0 z-50 h-[74px] border-b border-slate-200/70 bg-white/95 backdrop-blur-xl">
         <div className="flex h-full">
-          <div className="hidden w-[232px] shrink-0 items-center border-r border-slate-200/70 px-6 lg:flex">
+          <div className="hidden w-[232px] shrink-0 items-center border-r border-slate-200/70 px-6 md:flex">
             <div className="flex items-center gap-2.5">
               <div className="flex size-9 items-center justify-center rounded-[11px] bg-[#075547] text-white">
                 <Leaf className="size-5" />
@@ -1706,7 +1706,7 @@ export default function Home() {
 
           <div className="flex min-w-0 flex-1 items-center justify-between px-4 sm:px-6 lg:px-7">
             <div className="flex min-w-0 flex-1 items-center gap-3">
-              <div className="flex items-center gap-2 lg:hidden">
+              <div className="flex items-center gap-2 md:hidden">
                 <div className="flex size-9 items-center justify-center rounded-[11px] bg-[#075547] text-white"><Leaf className="size-5" /></div>
                 <span className="text-[14px] font-extrabold">MoveWell</span>
               </div>

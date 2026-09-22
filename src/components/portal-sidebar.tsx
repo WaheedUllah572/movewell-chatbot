@@ -73,7 +73,7 @@ export function PortalSidebar({ onHome }: PortalSidebarProps) {
 
   return (
     <aside
-      className={`hidden shrink-0 flex-col border-r border-slate-200/70 bg-white transition-[width] duration-200 lg:flex ${
+      className={`hidden shrink-0 flex-col border-r border-slate-200/70 bg-white transition-[width] duration-200 md:flex ${
         collapsed ? "w-[76px]" : "w-[232px]"
       }`}
     >
@@ -115,9 +115,7 @@ export function PortalSidebar({ onHome }: PortalSidebarProps) {
               title={collapsed ? label : undefined}
               aria-label={collapsed ? label : undefined}
               className={`group flex h-[45px] w-full items-center rounded-[11px] text-left text-[14px] transition ${
-                collapsed
-                  ? "justify-center px-0"
-                  : "gap-3 px-3.5"
+                collapsed ? "justify-center px-0" : "gap-3 px-3.5"
               } ${
                 active
                   ? "bg-[#e2f7ef] font-semibold text-[#075f4f]"
