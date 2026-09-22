@@ -319,7 +319,7 @@ IMPORTANT:
 `
       : "";
 
-/* =========================================================
+  /* =========================================================
      LATEST USER MESSAGE
      ========================================================= */
 
@@ -330,7 +330,7 @@ IMPORTANT:
         message.role === "user"
     );
 
-/* =========================================================
+  /* =========================================================
      RAG / KNOWLEDGE SEARCH
      ========================================================= */
 
@@ -364,10 +364,16 @@ IMPORTANT:
         "RAG SEARCH START"
       );
 
+      /*
+       * Optimized:
+       * - searchKnowledge() now skips RAG for basic clinic questions
+       * - uses embedding caching for repeated questions
+       * - returns only 3 results instead of 5
+       */
       const results =
         await searchKnowledge(
           userText,
-          5,
+          3,
           0.30
         );
 
